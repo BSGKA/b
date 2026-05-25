@@ -9,10 +9,11 @@ const client = new Client({
 });
 
 // Configuration
-const TOKEN = "MTUwODQyMzkwMTY0MDY1NTAxOQ.GuE8fW.ZJ0Htdqq-PcKi60DMxEU-1EzoYWUvvAonRj3-k";
-const CLIENT_ID = "1508423901640655019";
-const GUILD_ID = "1418590948056633467";
-const STAFF_CHANNEL_ID = "1508423987909099630";
+// Configuration (Secured via Discloud Dashboard)
+const TOKEN = process.env.DISCORD_TOKEN;
+const CLIENT_ID = process.env.CLIENT_ID;
+const GUILD_ID = process.env.GUILD_ID;
+const STAFF_CHANNEL_ID = process.env.STAFF_CHANNEL_ID;
 
 // Register Slash Command
 const commands = [
